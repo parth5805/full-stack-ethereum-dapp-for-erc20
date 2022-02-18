@@ -1,8 +1,13 @@
-# Full Stack Dapp For ERC20 Token Funcation access
+# Full Stack Dapp For Accessing Function of ERC20 Token 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+In this project I used React,Solidity,Hardhat,chai for testing.
+I created ERC20 from Scratch without using any library.
+I deploy this token on Ropsten Testnet for that I used alchemy.
+I also performed ERC20 uint testing.
+I made simple FrontEnd By using bootstrap.
 
-Try running some of the following tasks:
+# Prerequisite
+First You need to install require dependencies
 
 ```shell
 npx hardhat accounts
