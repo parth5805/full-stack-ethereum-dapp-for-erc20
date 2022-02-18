@@ -8,13 +8,24 @@ I made simple FrontEnd By using bootstrap.
 
 # Prerequisite
 First You need to install require dependencies
-
 ```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+ npm install
 ```
+Now,You need to create Alchemy account and select ropsten network.
+Then open envtest file and copy Http Api key from alchemy and paste it inside API_URl.
+Now open your mestamask and select one ropsten account and export private key and paste it inside PRIVATE_KEY in envtest.
+Now replace this envtest file name to .env
+
+Now Run this command 
+```shell
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network ropsten
+```
+Now copy Token address from console and paste it in App.js LineNo:7
+
+Now Run this command for React App
+```shell
+npm start
+```
+open localhost:3000 on browser
+
